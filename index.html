@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading Time Documentation</title>
+    <meta name="description" content="calculateReadingTime - A powerful JavaScript package for estimating reading time dynamically based on text length and font size.">
+    <meta name="keywords" content="reading time, JavaScript reading time calculator, text reading time estimator, dynamic reading time, content reading duration, JS reading time script">
+    <meta name="author" content="Sumeet Ghimire">
+    <title>calculateReadingTime - JavaScript Reading Time Estimator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,8 +16,7 @@
             color: #333;
         }
 
-        h1,
-        h2 {
+        h1, h2 {
             color: #fff;
             background-color: #4CAF50;
             padding: 10px;
@@ -49,68 +51,37 @@
             border-radius: 6px;
             border-left: 5px solid #4CAF50;
         }
-
-        .usage,
-        .demo {
-            font-size: 16px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .note {
-            background-color: #ffeb3b;
-            padding: 10px;
-            margin-top: 15px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .highlight {
-            background-color: #fffbcc;
-            padding: 5px;
-            border-radius: 4px;
-        }
-
-        .usage code {
-            color: #d32f2f;
-            font-size: 14px;
-        }
     </style>
 </head>
 
 <body>
-
-    <h1>calculateReadingTime - Documentation</h1>
-    <p><strong>calculateReadingTime</strong> is a simple JavaScript package that calculates the estimated reading time of a block of text, dynamically adjusting based on font size.</p>
+    <h1>calculateReadingTime - JavaScript Reading Time Estimator</h1>
+    <p><strong>calculateReadingTime</strong> is a lightweight and efficient JavaScript package designed to calculate the estimated reading time of any given text. This unique package dynamically adjusts based on font size and content length, making it ideal for blog posts, articles, and content-heavy websites.</p>
 
     <div class="section">
-        <h2>How to Use</h2>
-        <h3>1. Add the CDN</h3>
-        <p>To use the package, add the following CDN script to your HTML file:</p>
+        <h2>How to Use calculateReadingTime</h2>
+        <h3>1. Include the CDN</h3>
+        <p>To use this JavaScript reading time calculator, simply include the following CDN in your HTML file:</p>
         <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/sumeetghimire/calculateReadingTime/index.js"&gt;&lt;/script&gt;</code></pre>
     </div>
 
     <div class="section">
-        <h3>2. Add Content</h3>
-        <p>Create a content block for which you want to calculate the reading time. You can add any text inside this block:</p>
+        <h3>2. Define Content for Reading Time Calculation</h3>
+        <p>Wrap your text inside a container element for the reading time estimator:</p>
         <pre><code>&lt;div id="content"&gt;
-  &lt;h1&gt;Sample Text&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-  &lt;p&gt;Proin efficitur libero at dictum feugiat.&lt;/p&gt;
+  &lt;p&gt;This is a sample text for reading time estimation.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
     <div class="section">
-        <h3>3. Add Element to Display Reading Time</h3>
-        <p>Choose an element where you want the calculated reading time to be displayed. For example, you can add a <code>&lt;div&gt;</code> element:</p>
+        <h3>3. Display Reading Time</h3>
+        <p>Create an element to display the calculated reading time dynamically:</p>
         <pre><code>&lt;div id="reading-time"&gt;&lt;/div&gt;</code></pre>
     </div>
 
     <div class="section">
-        <h3>4. Call the Function</h3>
-        <p>Once the content is loaded, use the following script to call the <code>displayReadingTime</code> function to display the reading time in your target element:</p>
+        <h3>4. Implement JavaScript Function</h3>
+        <p>Invoke the <code>displayReadingTime</code> function to calculate and display reading time in the target element:</p>
         <pre><code>&lt;script&gt;
   window.onload = function() {
     displayReadingTime('reading-time');
@@ -119,39 +90,21 @@
     </div>
 
     <div class="section">
-        <h2>Example</h2>
-
+        <h2>Example Implementation</h2>
         <div class="example">
-            <h3>Complete Example Code:</h3>
+            <h3>Complete JavaScript Reading Time Estimator Code:</h3>
             <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;title&gt;Reading Time Test&lt;/title&gt;
-    &lt;style&gt;
-      body {
-        font-family: Arial, sans-serif;
-      }
-      #content {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 20px;
-      }
-      p {
-        font-size: 14px;
-      }
-    &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div id="content"&gt;
-      &lt;h1&gt;Sample Text&lt;/h1&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-      &lt;p&gt;Proin efficitur libero at dictum feugiat.&lt;/p&gt;
+      &lt;p&gt;This text demonstrates how to calculate reading time dynamically using JavaScript.&lt;/p&gt;
     &lt;/div&gt;
-
     &lt;div id="reading-time"&gt;&lt;/div&gt;
-
     &lt;script src="https://cdn.jsdelivr.net/gh/sumeetghimire/calculateReadingTime/index.js"&gt;&lt;/script&gt;
     &lt;script&gt;
       window.onload = function() {
@@ -163,17 +116,21 @@
         </div>
     </div>
 
-  
-
-    <div class="section note">
-        <p><strong>Note:</strong> Make sure to adjust the target element for displaying the reading time based on the element you choose in your HTML. You can use any element like a <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, or even a <code>&lt;p&gt;</code> element.</p>
+    <div class="section">
+        <h2>Why Use calculateReadingTime?</h2>
+        <ul>
+            <li>Lightweight and easy to implement JavaScript package.</li>
+            <li>Dynamically adjusts reading time based on text length and font size.</li>
+            <li>Ideal for blogs, news sites, and content-driven platforms.</li>
+            <li>Provides accurate reading time estimation for better user experience.</li>
+            <li>Enhances content engagement and accessibility.</li>
+        </ul>
     </div>
 
     <div class="section">
         <h2>License</h2>
-        <p>This project is licensed under the MIT License.</p>
+        <p>This JavaScript reading time calculator is open-source and licensed under the MIT License.</p>
     </div>
-
 </body>
 
 </html>
